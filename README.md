@@ -1,2 +1,2 @@
 # AndroidSkin
-及时换肤框架
+Android及时换肤框架
