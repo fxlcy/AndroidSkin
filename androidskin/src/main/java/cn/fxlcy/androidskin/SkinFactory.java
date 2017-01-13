@@ -63,7 +63,7 @@ public class SkinFactory {
         loadSkinResource(path, null, callback);
     }
 
-    public synchronized void loadSkinResource(final String path, final String pkgName, final LoadSkinResourceCallback callback) {
+    public void loadSkinResource(final String path, final String pkgName, final LoadSkinResourceCallback callback) {
         mCallback = callback;
         new Thread(new Runnable() {
             @Override

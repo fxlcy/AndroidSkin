@@ -16,6 +16,8 @@ import cn.fxlcy.androidskin.util.ResourceCompat;
  */
 
 public final class ResourceManager {
+    private final static String TAG = "ResourceManager";
+
     private Resources mResource;
     private String mPackageName;
     private String mSuffix;
@@ -85,13 +87,17 @@ public final class ResourceManager {
         if (!TextUtils.isEmpty(mSuffix)) {
             name += mSuffix;
         }
-
-        return getIdentifier(name, defType);
+        try {
+            return getIdentifier(name, defType);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 
     public int getIdentifier(String name, @ResourceType String defType) {
         int id = mResource.getIdentifier(name, defType, mPackageName);
-        if (id == 0 && !defType.equals(ResourceType.DRAWABLE)) {
+        if (id == 0) {
             throw new IllegalArgumentException("没找到" + name);
         }
 

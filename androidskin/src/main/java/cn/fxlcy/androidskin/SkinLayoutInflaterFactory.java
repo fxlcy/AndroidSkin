@@ -79,12 +79,14 @@ public class SkinLayoutInflaterFactory extends BaseLayoutInflaterFactory {
                     }
                 }
 
-            } else if (value.startsWith("?")) {
+            }
+
+            /*else if (value.startsWith("?")) {
                 String skinAttrName;
                 if ((skinAttrName = getDynamicAttrName(context, value)) != null) {
                     skinAttrs.add(new SkinAttr(type, skinAttrName));
                 }
-            }
+            }*/
         }
 
         if (!skinAttrs.isEmpty()) {

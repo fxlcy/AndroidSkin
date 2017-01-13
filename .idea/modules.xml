@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidSkin.iml" filepath="$PROJECT_DIR$/AndroidSkin.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidskin/androidskin.iml" filepath="$PROJECT_DIR$/androidskin/androidskin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skin1/skin1.iml" filepath="$PROJECT_DIR$/skin1/skin1.iml" />
     </modules>
   </component>
 </project>
