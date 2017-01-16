@@ -1,0 +1,11 @@
+﻿---
+layout default
+title 我的Blog
+---
+h2{{ page.title }}h2
+p最新文章p
+ul
+　　{% for post in site.posts %}
+　　　　li{{ post.date  date_to_string }} a href={{ site.baseurl }}{{ post.url }}{{ post.title }}ali
+　　{% endfor %}
+ul
